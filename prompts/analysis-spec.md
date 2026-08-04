@@ -94,7 +94,6 @@ Notion-flavored Markdown으로 아래 구조를 채운다.
 ## 6. 본문 수집 규칙 (SPA 우회)
 
 - 채용 사이트 상당수가 SPA(JS 렌더링)라 페이지 URL을 그대로 `WebFetch`하면 **일부 섹션(전형 절차·우대사항 등)이 누락**된다.
-- **JS 없이 읽히는 JSON API가 있으면 그것을 우선 사용**한다. 예: Wanted `https://www.wanted.co.kr/wd/{id}`
-  → API `https://www.wanted.co.kr/api/chaos/jobs/v4/{id}/details`.
+- **같은 공고를 JS 없이 읽을 수 있는 경로가 있으면 그것을 먼저 쓴다.** 사이트마다 다르므로 각자 확인해 채운다.
 - API로 각 섹션 원문을 확보해 `# 📄 원본 공고`에 **그대로** 넣고, 그 원문에서 속성을 추출한다.
 - 페이지·API 모두 본문 추출이 안 되면, 사용자에게 공고 텍스트를 붙여넣어 달라고 요청한다.

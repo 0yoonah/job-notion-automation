@@ -19,8 +19,8 @@ Notion "채용공고 트래커"의 **상태=인박스(미분석)** 행을 주기
     - 인박스 행이 없으면 "처리할 공고 없음"이라고만 답하고 종료.
 
 [2] 각 인박스 행에 대해:
-    - URL 속성(userDefined:URL)이 있으면 그 페이지를 WebFetch로 읽는다. SPA 사이트(Wanted 등)는
-      JSON API 우선 (예: wanted.co.kr/wd/{id} → wanted.co.kr/api/chaos/jobs/v4/{id}/details).
+    - URL 속성(userDefined:URL)이 있으면 그 페이지를 WebFetch로 읽는다.
+      SPA 사이트는 JS 없이 읽히는 경로가 있으면 그쪽을 먼저 쓴다.
       (페이지·API 모두 실패하면 그 행은 건너뛰고 메모에 "본문 수집 실패" 기록)
     - 공고에서 다음을 추출(원문에 없으면 비움, 추측 금지):
       회사명 · 포지션 · 경력 · 필수기술[] · 우대기술[] · 요구역량[] · 채용전형[] · 마감일 · 주요업무 요약

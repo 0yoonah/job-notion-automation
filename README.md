@@ -47,7 +47,7 @@
 
 ### 1) 온디맨드 단건 — `/analyze-job`
 ```
-/analyze-job https://www.wanted.co.kr/wd/336520
+/analyze-job https://example-jobs.com/posting/12345
 /analyze-job (공고 본문 붙여넣기)
 ```
 → 공고 1건을 분석해 Notion에 카드 생성, 생성된 페이지 링크를 반환.
@@ -87,6 +87,6 @@ job-notion-automation/
 
 - 현재 Notion 워크스페이스가 **무료 플랜**이라 인박스 행 조회(`query_*`)에 호출 한도가 있다.
   정리·수정은 제한이 없고, 조회는 fetch 폴백으로 우회한다.
-- SPA(JS 렌더링) 채용 사이트는 페이지 본문 추출이 불완전해서, **JSON API를 우선 사용해 우회**한다
-  (예: Wanted `/wd/{id}` → `/api/chaos/jobs/v4/{id}/details`). API도 없으면 본문 붙여넣기로 처리.
+- SPA(JS 렌더링) 채용 사이트는 페이지 본문 추출이 불완전하다. 같은 공고를 JS 없이 읽을 수 있는
+  경로가 있으면 그쪽을 먼저 쓰고, 없으면 본문 붙여넣기로 처리한다.
 - 멀티셀렉트(기술/역량 등) 새 옵션은 자동 추가되지 않아, 값 설정 전에 `update-data-source`로 먼저 옵션을 추가한다.
