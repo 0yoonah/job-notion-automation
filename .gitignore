@@ -2,4 +2,5 @@
 *.log
 .env
 .env.local
+profile.md
 node_modules/

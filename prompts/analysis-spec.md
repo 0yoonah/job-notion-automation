@@ -35,6 +35,8 @@
 | `채용전형` | multi_select | 전형 절차 (예: 서류·코딩테스트·과제·1차면접·2차면접·임원면접·컬처핏). 공고에 없으면 비움 |
 | `마감일` | date | 지원 마감일. 설정 시 `date:마감일:start`에 ISO 날짜(YYYY-MM-DD), `date:마감일:is_datetime`=0. 상시채용/미기재면 비움 |
 | `주요업무` | text | 주요 업무 2~3문장 요약 |
+| `적합도` | number | 내 프로필 대비 요건 적합도 0~100. 규칙은 [`fit-spec.md`](./fit-spec.md). `profile.md`가 없으면 비움 |
+| `적합도근거` | text | 점수 산출 근거 한 줄. 형식은 `fit-spec.md` §3 |
 | `userDefined:URL` | url | 원본 공고 링크 (있을 때만) |
 | `등록일` | created_time | 자동 (설정 불필요) |
 | `지원일` / `메모` | date / text | 사용자가 수기 관리 (자동화는 건드리지 않음) |
