@@ -16,7 +16,8 @@ argument-hint: (없음) — 전수 재계산
    SELECT url, "회사명", "포지션", "상태", "경력", "필수기술", "우대기술", "적합도"
    FROM "collection://<YOUR_DATA_SOURCE_ID>"
    ```
-   무료 플랜에서 `query_data_sources` 호출이 막히면 `notion-fetch` 폴백을 쓴다.
+   현재 플랜은 `query_data_sources`에 호출 한도가 있다. **429가 나면 30초 대기 후 재시도**한다
+   (36건 규모에서 실제로 걸린 적이 있다). 두 번 실패하면 `notion-fetch` 폴백으로 전환한다.
 
 3. **계산** — [`prompts/fit-spec.md`](../../prompts/fit-spec.md)의 규칙을 **그대로** 적용한다.
    가중치를 임의로 조정하지 않는다. 산수는 눈대중으로 하지 말고 실제로 계산한다
