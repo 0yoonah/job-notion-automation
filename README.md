@@ -163,3 +163,9 @@ job-notion-automation/
 - **상태 변경을 트리거로 잡을 수 없다.** Notion의 속성 변경 자동화는 유료 플랜 기능이고 MCP에 자동화
   생성 도구가 없다. 그래서 `상태`를 옮길 때 `지원일`이 자동으로 채워지게 만들 수 없다 — 수기 입력이거나,
   두 속성을 한 번에 설정하는 Notion 버튼 속성을 쓰는 방법뿐이다.
+
+## 관련 글
+
+- [Claude Code로 만든 채용공고 트래커](https://ohyoonah.github.io/posts/job-posting-automation-with-notion/) —
+  왜 적합도를 LLM 판단이 아니라 규칙으로 고정했는지, 404를 마감으로 단정하지 않고 애매한 변경은
+  보고만 하게 만든 이유까지, 이 README의 설계 결정을 만들기까지의 과정.
