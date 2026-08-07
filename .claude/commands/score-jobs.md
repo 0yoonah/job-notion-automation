@@ -43,5 +43,5 @@ argument-hint: (없음) — 전수 재계산
 
 ---
 
-> 이 파일은 리포 루트 `.claude/commands/score-jobs.md`(실제 활성 명령)의 사본이다.
+> 이 저장소를 클론하면 `/score-jobs`로 바로 쓸 수 있다.
 > `<YOUR_DATA_SOURCE_ID>`는 각자 환경 값으로 바꿔야 동작한다.

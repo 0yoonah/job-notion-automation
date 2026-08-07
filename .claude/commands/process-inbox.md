@@ -33,4 +33,5 @@ argument-hint: (인자 없음 — 상태=인박스 행을 모두 처리)
 
 ---
 
-> 리포 루트 `.claude/commands/process-inbox.md`(실제 활성 명령)의 사본. 클론 후 `/process-inbox`로 사용.
+> 이 저장소를 클론하면 `/process-inbox`로 바로 쓸 수 있다.
+> `<YOUR_DATA_SOURCE_ID>`는 각자 환경 값으로 바꿔야 동작한다.

@@ -31,5 +31,5 @@ argument-hint: <채용공고 URL 또는 붙여넣은 공고 본문>
 
 ---
 
-> 이 파일은 리포 루트 `.claude/commands/analyze-job.md`(실제 활성 명령)의 사본이다.
-> 이 저장소를 클론한 뒤 `/analyze-job`으로 바로 쓸 수 있도록 함께 포함한다.
+> 이 저장소를 클론하면 `/analyze-job`으로 바로 쓸 수 있다.
+> `<YOUR_DATA_SOURCE_ID>`는 각자 환경 값으로 바꿔야 동작한다.
